@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div class="postarticle">
+  <h2>{{ .Title }}</h2>
+    <h3>{{ .Date.Format "2006-01-02"  }}</h3>
+
+  
+  {{ .Content }}
+</div>
+{{ end }}

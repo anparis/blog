@@ -1,0 +1,15 @@
+{{ define "main" }}
+  {{ .Content }}
+  <section class="posts">
+    <ul>
+        {{ range first 10 (where .Site.RegularPages "Type" "in" "post").ByDate.Reverse }} 
+        <li>
+            {{ .Date.Format "2006-01-02"  }} - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+    </ul>
+  </section>
+  <div class="archive">
+    <a href="/post">Older posts.</a>
+  </div>
+{{ end }}

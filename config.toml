@@ -1,0 +1,9 @@
+baseurl = "https://anparis.github.io/"
+enableEmoji = true
+languageCode = "en-us"
+title = "antonin paris blog"
+theme = "basic"
+pygmentsUseClasses = true
+pygmentsCodefences = true
+
+
