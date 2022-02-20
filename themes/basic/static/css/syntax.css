@@ -81,3 +81,7 @@
     border: 0.5px solid #999;
     background-color: #f8f8f8;
 }
+
+pre > code{
+    white-space: pre-wrap;
+}
