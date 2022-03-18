@@ -5,9 +5,11 @@ draft: false
 author: Antonin Paris
 ---
 
-In this post, I will just give a quick overview and hints of how I created the website with Hugo, I will not go into all the details. My main inspiration and what I was aiming for this blog was [John L. Godlee blog](http://johngodlee.xyz/). A very well done blog in my opinion and I can only recommand you to check out his blog.
+In this post, I will just give a quick overview and hints of how I created the website with Hugo, I will not go into all the details. My main inspiration and what I was aiming for this blog was [John L. Godlee blog](http://johngodlee.xyz/). A very well done blog in my opinion and I can only recommand you to take a look at his blog.
 
-For this blog, I actually wanted to understand how hugo worked, so I started from scratch with hugo basic theme and used the book *"Brian P. Hogan - Build Websites with Hugo Fast Web Development with Markdown ( 2020, Pragmatic Bookshelf )*" which is like an 'how-to' guide and helped me to understand layouts in Hugo. I also used Hugo documentation for complementary explanations.
+For this blog, I actually wanted to understand how hugo worked, so I started from scratch with hugo basic theme and used the book *"Brian P. Hogan - Build Websites with Hugo Fast Web Development with Markdown ( 2020, Pragmatic Bookshelf )*" which is like an 'how-to' guide and helped me to understand layouts in Hugo. I also used Hugo documentation.
+
+The hugo files are available on my github in the 'blog' repository.
 
 ### The main problems
 * Date format for my blog posts
@@ -70,11 +72,11 @@ PS : Don't forget to change the path `/syntax.css` into `css/syntax.css` in `hea
 
 /**clickable icons problem**
 
-Once that I found out the existence of [font awesome](https://fontawesome.com/), adding incons worked like a charm.
+Once that I discovered the existence of [font awesome](https://fontawesome.com/), adding icons worked like a charm.
 
-To use it, you need to subscribe in order to receive a script that you then add to your head.html (No idea if you can manage to make it work without subscription).
+To use it, I subscribed to receive a script that I could then add to my head.html (No idea if you can manage to make it work without subscription).
 
-Then you just add to copy paste the icon that you want in your html code, for example the github icon :
+Then you just have to copy paste the icon that you want in your html code, for example the github icon :
 ```html
 <i class="fa-brands fa-github"></i>
 ```
