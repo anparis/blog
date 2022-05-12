@@ -1,10 +1,10 @@
 ---
-title: "{{ replace .Name "-" " " | title }}" 
+title: "Card Challenge" 
 draft: false
 ---
 ![alt](//via.placeholder.com/640x150) Description...
 
 ### Tech used
-* item
-* item
-* item
+* Html/CSS
+* Flexbox
+* Bem notation

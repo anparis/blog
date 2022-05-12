@@ -1,30 +1,30 @@
 body {
-    max-width: 800px;
-    margin: auto;
-    padding: 1em;
-    line-height: 1.5em;
-    font-size: 18px;
-    font-family: sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 1.5em;
+  font-size: 18px;
+  font-family: sans-serif;
 }
 
 header {
-    background: #EBEBFC;
-    font-size: 20px;
+  background: #EBEBFC;
+  font-size: 20px;
 }
 
-header a{
-    display: flex;
-    align-items: center;
+header a {
+  display: flex;
+  align-items: center;
 }
 
-a #logo{
-    order: -1;
-    margin-right: 1em;
+a #logo {
+  order: -1;
+  margin-right: 1em;
 }
 
 header img {
-  border-radius:50%;
-  margin:auto;
+  border-radius: 50%;
+  margin: auto;
 }
 
 nav a {
@@ -38,56 +38,91 @@ a {
   color: #b32929e1;
 }
 
-.content a:hover{
-    color:white;
-    text-decoration: underline;
-    background-color: #b32929e1;
+.main__container a:hover,
+a:active {
+  color: white;
+  text-decoration: underline;
+  background-color: #b32929e1;
 }
 
-.navbar{
-    margin-top: 1em;
+.navbar {
+  margin-top: 1em;
 }
-.navbar a:hover{
-    text-decoration: underline #8c8c8c;
+
+.navbar a:hover,
+a:active {
+  text-decoration: underline #8c8c8c;
 }
 
 hr {
-    border: 1px solid #a9a9a9;
+  border: 1px solid #a9a9a9;
 }
 
 .posts ul {
-    list-style-type: none; 
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
-.postarticle h2{
-    margin-bottom: 0px;
+.postarticle h2 {
+  margin-bottom: 0px;
 }
-.postarticle .postdate{
-    margin: 0px 0px 18px 0px;
-    color: #8c8c8c;
+
+.postarticle .postdate {
+  margin: 0px 0px 18px 0px;
+  color: #8c8c8c;
 }
 
 
 footer {
-    margin-top: 4em;
+  margin-top: 4em;
 }
 
-footer i {
-    margin-left: 1em;
-    color: black;
+footer svg {
+  list-style-type: none;
+  margin-left: 1em;
+  fill: black;
 }
 
-footer i:hover{
-    color:#b32929a6;
+footer svg:hover {
+  fill: #b32929a6;
 }
 
-@media only screen and (min-width: 768px) { 
-    nav { 
-        flex-direction: row;
-    }
+@media only screen and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
 }
 
-@media only screen and (max-width:342px){
-    header{ background: none;}
+@media only screen and (max-width:390px) {
+  header {
+    background: none;
+    display: none;
+  }
+}
+  
+/* to add more rows add 1fr in grid-template-rows */
+.projects__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;  
+  gap: 6px 6px;
+  grid-template-areas:
+    "projects__card . ."
+    ". . ."
+    ". . .";
+}
+
+.projects__card a img {
+  grid-area: projects__card;
+  width: 100%;
+  height: 100%;
+}
+
+.projects__card a:hover,
+a:active{
+  opacity: 0.7;
+}
+
+.content .navbar:nth-child(3){
+background-color: aqua;
 }
