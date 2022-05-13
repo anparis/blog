@@ -1,6 +1,6 @@
 {{ define "main" }}
 <h2>{{ .Title }}</h2>
-<section class="posts">
+<section class="posts main__container">
 <ul>
     {{ range (where .Site.RegularPages "Type" "in" "posts") }} 
     <li>

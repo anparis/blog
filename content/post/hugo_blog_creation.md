@@ -5,7 +5,7 @@ draft: false
 author: Antonin Paris
 ---
 
-In this post, I will just give a quick overview and hints of how I created the website with Hugo, I will not go into all the details. My main inspiration and what I was aiming for this blog was [John L. Godlee blog](http://johngodlee.xyz/). A very well done blog in my opinion and I can only recommand you to take a look at his blog.
+In this post, I will just give a quick overview and hints of how I created the website with Hugo, I will not go into all the details. My main inspiration and what I was aiming for this blog was [John L. Godlee blog](http://johngodlee.xyz/).
 
 For this blog, I actually wanted to understand how hugo worked, so I started from scratch with hugo basic theme and used the book *"Brian P. Hogan - Build Websites with Hugo Fast Web Development with Markdown ( 2020, Pragmatic Bookshelf )*" which is like an 'how-to' guide and helped me to understand layouts in Hugo. I also used Hugo documentation.
 
@@ -19,18 +19,19 @@ The hugo files are available on my github in the 'blog' repository.
 
 ### The solutions
 
-/**date formating problem**
+#### Date format
 
 It was actually well documented on https://gohugo.io/functions/format/ but I spend some time to find it.
 
-I added `{{ .Date.Format "2006-01-02"  }}` in front of my blog post titles in my *list.html* file  :
+I added {{ .Date.Format "2006-01-02"  }} in front of my blog post titles in my list.html file :
+
 ```html 
 {{ .Date.Format "2006-01-02"  }} - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
 ```
 
-/**posts display on index page problem**
+#### Posts display
 
-To solve this problem I added these lines to my `index.html` file :
+To solve this problem I added these lines to my index.html file :
 ```html
 <section class="posts">
   <ul>
@@ -49,35 +50,39 @@ To solve this problem I added these lines to my `index.html` file :
   `.ByDate.Reverse` to display the posts from the latest to the oldest.
 
 
-/**code block problem**
+#### Code blocks
 
-To custom code blocks, I added 2 lines in my `config.toml` to make syntax highlighting work.
+To custom code blocks, I added 2 lines in my config.toml to make syntax highlighting work.
 ```plain
 pygmentsUseClasses = true
 pygmentsCodefences = true
 ```
-I chosed a [chroma style](https://xyproto.github.io/splash/docs/) to color my code blocks. Personally, I chosed the style *friendly* and added it with this command :
+I chosed a [chroma style](https://xyproto.github.io/splash/docs/) to add colors to my code blocks. Personally, I opted for the style *friendly*. You can use this command to add it :
 ```shell
 hugo gen chromastyles --style=friendly > syntax.css
 ```
-Then I added syntax.css in my `head.html` file 
+Then I added syntax.css in my head.html file 
 ```html
 <link rel="stylesheet" href="{{ "/syntax.css" | relURL }}" />
 ```
 
-And then I just couldn't find how to make it work until I changed the location of syntax.css in my `blog/anparis/themes/basic/static/css/` folder which was before located in `blog/anparis/themes/basic/` and then it worked !
-
-PS : Don't forget to change the path `/syntax.css` into `css/syntax.css` in `head.html`.
+The `/syntax.css` file needs to be located in `blog/anparis/themes/basic/static/css/` to make syntax highlighting work.
 
 
-/**clickable icons problem**
+#### Clickable icons
 
-Once that I discovered the existence of [font awesome](https://fontawesome.com/), adding icons worked like a charm.
+**EDIT** : I was using [font awesome](https://fontawesome.com/) to manage icons in my footer but I realized that it was making my website heavy and I don't want to rely on external libraries.
 
-To use it, I subscribed to receive a script that I could then add to my head.html (No idea if you can manage to make it work without subscription).
+The replacement I found to font awesome is [iconify](https://icon-sets.iconify.design/). I can select my icon and take the svg code associated with it. 
 
-Then you just have to copy paste the icon that you want in your html code, for example the github icon :
+Then I add the svg icons in my footer :
 ```html
-<i class="fa-brands fa-github"></i>
+<a class="icon" target="_blank" href="YOUR LINK">
+    <svg xmlns="http://www.w3.org/2000/svg"
+      width="1.03em" 
+      height="1em" 
+      viewBox="0 0 1536 1504">
+      <path d="THE SVG PATH</svg>
+</a>
 ```
-And the icon will appear on your website and you can customize it with your css stylesheet.
+And the icons will then appear on your website. You can customize them with css.

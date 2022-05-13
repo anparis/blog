@@ -7,7 +7,7 @@ I will use this blog as a way of sharing my learnings or interesting findings.
 
 ## Links 
 
-Github : [anparis](https://github.com/anparis})
+Github : [anparis](https://github.com/anparis)
 
 Email : antonin.pariss@gmail.com
 

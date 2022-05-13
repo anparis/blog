@@ -2,9 +2,8 @@ body {
   max-width: 800px;
   margin: auto;
   padding: 1em;
-  line-height: 1.5em;
-  font-size: 18px;
-  font-family: sans-serif;
+  line-height: 1.7em;
+  font-size: 1.25rem;
 }
 
 header {
@@ -38,7 +37,7 @@ a {
   color: #b32929e1;
 }
 
-.main__container a:hover,
+.content .main__container a:hover,
 a:active {
   color: white;
   text-decoration: underline;
