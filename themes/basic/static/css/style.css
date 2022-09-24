@@ -3,7 +3,7 @@ body {
   margin: auto;
   padding: 1em;
   line-height: 1.7em;
-  font-size: 1.25rem;
+  font-size: 1.10rem;
 }
 
 header {
@@ -37,7 +37,7 @@ a {
   color: #b32929e1;
 }
 
-.content .main__container a:hover,
+.main__container a:hover,
 a:active {
   color: white;
   text-decoration: underline;

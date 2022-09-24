@@ -21,7 +21,7 @@ The hugo files are available on my github in the 'blog' repository.
 
 #### Date format
 
-It was actually well documented on https://gohugo.io/functions/format/ but I spend some time to find it.
+It was actually well documented on https://gohugo.io/functions/format/  but it took me some time to find it.
 
 I added {{ .Date.Format "2006-01-02"  }} in front of my blog post titles in my list.html file :
 
