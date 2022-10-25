@@ -1,9 +1,9 @@
 
-Welcome :wave: to my  blog. 
+Welcome :wave: ! 
 
-I am French, living in France Strasbourg, 23 years old. I studied biology and IT.
+I'm currently studying web development at [Elan Formation](https://elan-formation.fr/formation/19754) 
 
-I will use this blog as a way of sharing my learnings or interesting findings.
+I imagine this blog as a way of sharing content, knowledge or thinks that I'm passionate about.   
 
 ## Links 
 
