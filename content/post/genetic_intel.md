@@ -19,7 +19,7 @@ Penser en terme de "mutation qui affecte" plutot que "gene pour" un trait.
 
 Des chercheurs ont suggéré que **g** pourrait être simplement un indice d'un facteur fitness géneral - une mesure indirect de la charge de mutation dans un organisme. L'idée est que, bien que l'on porte tous des mutations délétèrent en nous, certains en portent plus que d'autres, où avec des effets plus sévères. Ce qui signifie que les mutations affectant l'intelligence chez une personne peuvent êtres totalement différentes des mutations affectant une autre personne.
 
-Ce genre d'effet a été mis en évidence par études qui ont montré que de nombreuses copies de variants rares de gènes prédit négativement l'intelligence.
+Ce genre d'effet a été mis en évidence par des études qui ont montré que de nombreuses copies de variants rares de gènes prédit négativement l'intelligence.
 
 Si **g** est un indice de facteur de fitness general, alors il devrait correler avec d'autres indices de fitness. 
 En effet **g** est légérement corrélé positivement avec la taille, et aussi fortement corrélé avec différentes mesures de santé et de longévité.

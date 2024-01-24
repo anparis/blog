@@ -3,6 +3,8 @@ title: "How I created this blog, with Hugo"
 date: 2022-02-18T17:09:29+01:00
 draft: false
 author: Antonin Paris
+categories: [development]
+tags: [hugo,static site generator]
 ---
 
 In this post, I will just give a quick overview and hints of how I created the website with Hugo, I will not go into all the details. My main inspiration and what I was aiming for this blog was [John L. Godlee blog](http://johngodlee.xyz/).

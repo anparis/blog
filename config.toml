@@ -5,5 +5,8 @@ title = "Antonin Paris blog"
 theme = "basic"
 pygmentsUseClasses = true
 pygmentsCodefences = true
+[taxonomies]
+  tag="tags"
+  category="categories"
 
 
